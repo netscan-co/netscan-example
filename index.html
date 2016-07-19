@@ -3,7 +3,7 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="x-ua-compatible" content="ie=edge">
-        <title></title>
+        <title>Netscan Example</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -11,6 +11,7 @@
         <!-- Place favicon.ico in the root directory -->
 
         <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
         <link rel="stylesheet" href="css/main.css">
         <script src="js/vendor/modernizr-2.8.3.min.js"></script>
     </head>
@@ -20,11 +21,82 @@
         <![endif]-->
 
         <!-- Add your site or application content here -->
-        <p>Hello world! This is HTML5 Boilerplate.</p>
+        <div class="jumbotron">
+            <div class="container">
+                <h1>Netscan Example</h1>
+                <br>
+                <p>Showcase of how the Netscan SDK can integrate in your site.</p>
+            </div>
+        </div>
+
+        <div class="container">
+            <form>
+                <div class="row">
+                    <div class="col-md-6 col-md-offset-3">
+                        <div class="row">
+                            <div class="col-md-1 step-wrapper">
+                                <div class="step">1</div>
+                            </div>
+                            <div class="col-md-10">
+                                <div class="form-group">
+                                    <label for="name">Fill in your name</label>
+                                    <input type="text" class="form-control" id="name">
+                                </div>
+                            </div>
+                            <div class="col-md-1"></div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-md-offset-3">
+                        <div class="row">
+                            <div class="col-md-1 step-wrapper">
+                                <div class="step">2</div>
+                            </div>
+                            <div class="col-md-10">
+                                <div class="step-title">Press button to start scanning</div>
+                                <button type="submit" class="btn btn-default" id="start">Start scan</button>
+                                <img src="img/loader.gif" class="loader" />
+                            </div>
+                            <div class="col-md-1"></div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-md-offset-3 result-wrapper">
+                        <div class="row">
+                            <div class="col-md-1 step-wrapper">
+                                <div class="step">3</div>
+                            </div>
+                            <div class="col-md-10">
+                                <div class="step-title">Get the result URL</div>
+                                <a href="#" class="result">https://www.netscan.co/r/</a>
+                            </div>
+                            <div class="col-md-1"></div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+
+        </div>
+
+        <footer class="sticky">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6">
+                        <p><a href="https://github.com/netscan-co/netscan-example" target="_blank">View the source on GitHub</a></p>
+                    </div>
+                    <div class="col-md-6">
+                        <p class="text-right">
+                            Powered by
+                            <a href="https://www.netscan.co" target="_blank">Netscan</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </footer>
 
         <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.12.0.min.js"><\/script>')</script>
         <script src="js/plugins.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+        <script src="http://sdk.netscan.co/netscan.js"></script>
         <script src="js/main.js"></script>
 
         <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
