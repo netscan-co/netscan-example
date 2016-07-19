@@ -16,10 +16,12 @@
       }
     });
 
-    // Start scanning
+    // Hide submit button and show loader just before scanning start.
     $('#start').hide();
     $('.loader').show();
+    // Start scanning
     nets.start(function(err, result) {
+      // Show, hide and change result link accordingly
       $('.loader').hide();
       $('.result').html(result.url).attr('href', result.url);
       $('.result-wrapper').show();
